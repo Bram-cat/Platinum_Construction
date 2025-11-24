@@ -73,7 +73,7 @@ export function Hero({ onGetQuote }: HeroProps) {
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full mb-6 border border-white/30">
               <HardHat className="w-5 h-5 text-secondary" />
               <span className="text-white text-sm font-semibold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
-                Premium Construction Services
+                Serving Charlottetown & Prince Edward Island
               </span>
             </div>
           </motion.div>
@@ -85,10 +85,10 @@ export function Hero({ onGetQuote }: HeroProps) {
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 font-chubbo leading-tight"
           >
             <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-              Building Excellence,
+              Come Home to
             </span>{" "}
             <span className="bg-gradient-to-r from-secondary via-orange-300 to-yellow-300 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(252,163,17,0.5)]">
-              One Project at a Time
+              Quality
             </span>
           </motion.h1>
 
@@ -98,8 +98,7 @@ export function Hero({ onGetQuote }: HeroProps) {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
           >
-            From residential homes to commercial buildings, we deliver premium
-            craftsmanship and exceptional service for all your construction needs.
+            Professional construction and contracting services in Charlottetown and across Prince Edward Island. Quality craftsmanship you can trust.
           </motion.p>
 
           <motion.div

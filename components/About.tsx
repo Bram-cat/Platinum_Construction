@@ -44,13 +44,13 @@ export function About() {
               Building Excellence Since Day One
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              At <span className="font-semibold text-primary">Platinum Construction</span>, we&apos;re dedicated to delivering exceptional construction services. With years of experience and a commitment to quality, we transform visions into reality.
+              At <span className="font-semibold text-primary">Platinum Construction</span>, we&apos;re a trusted construction and contracting company serving Charlottetown and all of Prince Edward Island. Our motto says it all: <span className="font-semibold text-secondary">&quot;Come home to quality.&quot;</span>
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Whether you&apos;re building your dream home, expanding your business, or renovating an existing space, our experienced team brings expertise, professionalism, and attention to detail to every project.
+              Whether you&apos;re building your dream home, expanding your business, or renovating an existing space, our experienced team brings expertise, professionalism, and attention to detail to every project across PEI.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              We take pride in using premium materials, proven construction methods, and maintaining clear communication throughout every phase of your project. Your satisfaction is our top priority.
+              We take pride in delivering quality craftsmanship, using proven construction methods, and maintaining clear communication throughout every phase of your project. Your satisfaction is our top priority.
             </p>
           </motion.div>
 

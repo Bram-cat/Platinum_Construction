@@ -22,7 +22,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              Premium construction services that build excellence. Delivering exceptional craftsmanship and dedicated service for all your construction needs.
+              Come home to quality. Professional construction services serving Charlottetown and Prince Edward Island with exceptional craftsmanship.
             </p>
           </div>
 
@@ -34,10 +34,16 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
                 <div>
                   <a
-                    href="tel:+15551234567"
+                    href="tel:9023301444"
                     className="block text-white/70 hover:text-white transition-colors mb-1"
                   >
-                    (555) 123-4567
+                    (902) 330-1444 - Seth
+                  </a>
+                  <a
+                    href="tel:9023947343"
+                    className="block text-white/70 hover:text-white transition-colors"
+                  >
+                    (902) 394-7343 - Matt
                   </a>
                 </div>
               </div>
@@ -45,18 +51,18 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
                 <div>
                   <a
-                    href="mailto:info@platinumconstruction.com"
+                    href="mailto:platinumconstructionpei@gmail.com"
                     className="block text-white/70 hover:text-white transition-colors text-sm"
                   >
-                    info@platinumconstruction.com
+                    platinumconstructionpei@gmail.com
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
                 <div className="text-white/70">
-                  123 Main Street<br />
-                  Suite 100, Your City
+                  Charlottetown, PE<br />
+                  Prince Edward Island, Canada
                 </div>
               </div>
             </div>

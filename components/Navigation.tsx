@@ -23,6 +23,7 @@ import {
   Paintbrush,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
@@ -84,9 +85,14 @@ export function Navigation({ onGetQuote }: NavigationProps) {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-secondary to-orange-300 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                <HardHat className="w-5 h-5 text-black" />
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative w-12 h-12 group-hover:scale-110 transition-transform">
+                <Image
+                  src="/images/logo.jpg"
+                  alt="Platinum Construction Logo"
+                  fill
+                  className="object-contain rounded-lg"
+                />
               </div>
               <div className="hidden sm:block">
                 <div className="font-bold text-lg text-white font-chubbo drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">

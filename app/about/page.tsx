@@ -58,8 +58,8 @@ export default function AboutPage() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/4.png"
-            alt="BernMar Construction Projects"
+            src="/images/4.jpg"
+            alt="Platinum Construction Projects"
             fill
             className="object-cover brightness-[0.4]"
             priority
@@ -73,12 +73,12 @@ export default function AboutPage() {
           transition={{ duration: 0.6 }}
         >
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full mb-6 border border-white/30">
-            <HardHat className="w-5 h-5 text-blue-300" />
-            <span className="text-sm font-semibold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">Serving PEI Since Day One</span>
+            <HardHat className="w-5 h-5 text-secondary" />
+            <span className="text-sm font-semibold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">Charlottetown & Prince Edward Island</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-technor drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">About BernMar</h1>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-chubbo drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">About Platinum</h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            Your trusted partner for quality construction services across Prince Edward Island
+            Come home to quality. Your trusted partner for construction and contracting services across PEI.
           </p>
         </motion.div>
       </section>
@@ -93,19 +93,19 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-technor">Our Story</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-chubbo">Our Story</h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  <span className="font-semibold text-primary">BernMar Construction</span> is a locally operated construction company proudly serving Prince Edward Island. Located at 345 Brackley Point Road, Route 15, we specialize in both residential and commercial construction projects.
+                  <span className="font-semibold text-primary">Platinum Construction</span> is a locally operated construction and contracting company proudly serving Charlottetown and all of Prince Edward Island. We specialize in both residential and commercial construction projects.
                 </p>
                 <p>
-                  From the start, our mission has been simple: to deliver quality construction services with integrity, professionalism, and a commitment to excellence. Whether you&apos;re building your dream home, renovating an existing space, or developing a commercial property, we bring the expertise and dedication needed to bring your vision to life.
+                  From the start, our mission has been simple: to deliver quality construction services with integrity, professionalism, and a commitment to excellence. Our motto, <span className="font-semibold text-secondary">&quot;Come home to quality,&quot;</span> reflects our dedication to craftsmanship that stands the test of time.
                 </p>
                 <p>
-                  Our team combines years of construction experience with a deep understanding of local building requirements and conditions. We take pride in using quality materials, proven construction methods, and maintaining clear communication throughout every phase of your project.
+                  Whether you&apos;re building your dream home, renovating an existing space, or developing a commercial property, we bring the expertise and dedication needed to bring your vision to life across PEI.
                 </p>
                 <p className="font-semibold text-primary">
-                  At BernMar Construction, we don&apos;t just build structures—we build lasting relationships with our clients and our community.
+                  At Platinum Construction, we don&apos;t just build structures—we build lasting relationships with our clients and our community.
                 </p>
               </div>
             </motion.div>
@@ -119,8 +119,8 @@ export default function AboutPage() {
               whileHover={{ scale: 1.02 }}
             >
               <Image
-                src="/images/5.png"
-                alt="BernMar Construction work"
+                src="/images/5.jpg"
+                alt="Platinum Construction work"
                 fill
                 className="object-cover"
               />
@@ -144,10 +144,10 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-secondary to-blue-400 flex items-center justify-center shadow-lg">
-                    <Icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-secondary to-orange-300 flex items-center justify-center shadow-lg">
+                    <Icon className="w-8 h-8 text-black" />
                   </div>
-                  <div className="text-4xl md:text-5xl font-bold text-primary mb-2 font-technor">{stat.number}</div>
+                  <div className="text-4xl md:text-5xl font-bold text-primary mb-2 font-chubbo">{stat.number}</div>
                   <div className="text-gray-600 font-medium">{stat.label}</div>
                 </motion.div>
               )
@@ -166,7 +166,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-technor">Our Values</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-chubbo">Our Values</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               These core principles guide everything we do, from how we interact with clients to
               the quality of work we deliver
@@ -189,7 +189,7 @@ export default function AboutPage() {
                       <div className={`w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br ${value.color} flex items-center justify-center shadow-lg`}>
                         <Icon className="w-8 h-8 text-white" />
                       </div>
-                      <h3 className="text-2xl font-bold text-primary mb-4 font-technor">{value.title}</h3>
+                      <h3 className="text-2xl font-bold text-primary mb-4 font-chubbo">{value.title}</h3>
                       <p className="text-gray-600 leading-relaxed">{value.description}</p>
                     </CardContent>
                   </Card>
@@ -215,8 +215,8 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-technor">Get In Touch</h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-chubbo">Get In Touch</h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
               Ready to start your project? We&apos;re here to help bring your vision to life
             </p>
           </motion.div>
@@ -231,11 +231,14 @@ export default function AboutPage() {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
                 <CardContent className="p-8 text-center">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary flex items-center justify-center">
-                    <Phone className="w-8 h-8 text-white" />
+                    <Phone className="w-8 h-8 text-black" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2 font-technor">Phone</h3>
-                  <a href="tel:9023703112" className="text-blue-200 hover:text-white transition-colors">
-                    (902) 370-3112
+                  <h3 className="text-xl font-bold mb-2 font-chubbo">Phone</h3>
+                  <a href="tel:9023301444" className="text-white/70 hover:text-white transition-colors block mb-1">
+                    (902) 330-1444 - Seth
+                  </a>
+                  <a href="tel:9023947343" className="text-white/70 hover:text-white transition-colors block">
+                    (902) 394-7343 - Matt
                   </a>
                 </CardContent>
               </Card>
@@ -250,11 +253,11 @@ export default function AboutPage() {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
                 <CardContent className="p-8 text-center">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary flex items-center justify-center">
-                    <Mail className="w-8 h-8 text-white" />
+                    <Mail className="w-8 h-8 text-black" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2 font-technor">Email</h3>
-                  <a href="mailto:mark@bernmarconstruction.com" className="text-blue-200 hover:text-white transition-colors break-all">
-                    mark@bernmarconstruction.com
+                  <h3 className="text-xl font-bold mb-2 font-chubbo">Email</h3>
+                  <a href="mailto:platinumconstructionpei@gmail.com" className="text-white/70 hover:text-white transition-colors break-all">
+                    platinumconstructionpei@gmail.com
                   </a>
                 </CardContent>
               </Card>
@@ -269,12 +272,12 @@ export default function AboutPage() {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
                 <CardContent className="p-8 text-center">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary flex items-center justify-center">
-                    <MapPin className="w-8 h-8 text-white" />
+                    <MapPin className="w-8 h-8 text-black" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2 font-technor">Location</h3>
-                  <p className="text-blue-200">
-                    345 Brackley Point Road<br />
-                    Rte 15, PEI
+                  <h3 className="text-xl font-bold mb-2 font-chubbo">Location</h3>
+                  <p className="text-white/70">
+                    Charlottetown, PE<br />
+                    Prince Edward Island, Canada
                   </p>
                 </CardContent>
               </Card>
@@ -293,7 +296,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-technor">Why Choose BernMar?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-chubbo">Why Choose Platinum?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Here&apos;s what sets us apart from other construction companies in PEI
             </p>
@@ -328,10 +331,10 @@ export default function AboutPage() {
                 >
                   <Card className="h-full hover:shadow-xl transition-all duration-300 border-2 hover:border-secondary/40">
                     <CardContent className="p-8 text-center">
-                      <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-secondary to-blue-400 flex items-center justify-center shadow-lg">
-                        <Icon className="w-8 h-8 text-white" />
+                      <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-secondary to-orange-300 flex items-center justify-center shadow-lg">
+                        <Icon className="w-8 h-8 text-black" />
                       </div>
-                      <h3 className="text-2xl font-bold text-primary mb-4 font-technor">{item.title}</h3>
+                      <h3 className="text-2xl font-bold text-primary mb-4 font-chubbo">{item.title}</h3>
                       <p className="text-gray-600 leading-relaxed">{item.description}</p>
                     </CardContent>
                   </Card>
@@ -356,16 +359,16 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-technor">Ready to Get Started?</h2>
-            <p className="text-xl text-blue-100 mb-8">
-              Experience the BernMar difference. Contact us today for a free consultation and see why PEI
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-chubbo">Ready to Get Started?</h2>
+            <p className="text-xl text-white/70 mb-8">
+              Experience the Platinum difference. Contact us today for a free consultation and see why PEI
               property owners trust us with their construction projects.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
                 onClick={() => setIsQuoteDialogOpen(true)}
-                className="bg-secondary text-white hover:bg-secondary/90 text-lg px-8 py-6 h-auto font-semibold shadow-xl hover:shadow-2xl transition-all"
+                className="bg-secondary text-black hover:bg-secondary/90 text-lg px-8 py-6 h-auto font-semibold shadow-xl hover:shadow-2xl transition-all"
               >
                 Get a Free Consultation
               </Button>
@@ -375,7 +378,7 @@ export default function AboutPage() {
                 asChild
                 className="bg-white/10 text-white border-white/30 hover:bg-white/20 text-lg px-8 py-6 h-auto font-semibold backdrop-blur-sm"
               >
-                <a href="tel:9023703112">
+                <a href="tel:9023301444">
                   <Phone className="w-5 h-5 mr-2" />
                   Call Us Now
                 </a>

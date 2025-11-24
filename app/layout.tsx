@@ -7,31 +7,31 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Platinum Construction | Premium Construction Services",
-  description: "Elite construction services specializing in residential and commercial projects, renovations, custom builds, and more. Premium craftsmanship you can trust.",
+  title: "Platinum Construction | Construction & Contracting in Charlottetown, PEI",
+  description: "Come home to quality. Professional construction and contracting services in Charlottetown and Prince Edward Island. Residential and commercial projects, renovations, and custom builds.",
   keywords: [
-    "construction services",
-    "renovations",
-    "home building",
-    "commercial construction",
-    "residential construction",
-    "custom builds",
-    "premium construction",
-    "Platinum Construction"
+    "construction Charlottetown",
+    "construction PEI",
+    "contractor Prince Edward Island",
+    "renovations Charlottetown",
+    "home building PEI",
+    "commercial construction PEI",
+    "residential construction Charlottetown",
+    "Platinum Construction PEI"
   ],
   authors: [{ name: "Platinum Construction" }],
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://platinumconstruction.com",
-    title: "Platinum Construction | Premium Construction Services",
-    description: "Elite construction services. Building excellence with premium craftsmanship and dedicated service.",
+    locale: "en_CA",
+    url: "https://platinumconstructionpei.com",
+    title: "Platinum Construction | Construction & Contracting in Charlottetown, PEI",
+    description: "Come home to quality. Professional construction services serving Charlottetown and Prince Edward Island.",
     siteName: "Platinum Construction",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Platinum Construction | Premium Construction Services",
-    description: "Elite construction services. Premium craftsmanship you can trust.",
+    title: "Platinum Construction | Construction & Contracting in Charlottetown, PEI",
+    description: "Come home to quality. Professional construction services serving PEI.",
   },
   robots: "index, follow",
 }
