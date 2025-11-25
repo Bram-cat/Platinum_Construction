@@ -55,10 +55,12 @@ export async function POST(request: NextRequest) {
     // Send email via Resend (if configured)
     if (resend) {
       try {
+        const senderEmail = process.env.SENDERS_EMAIL || "vsbharaniram5@gmail.com";
         await resend.emails.send({
-          from: "Washly Washing Services <onboarding@resend.dev>",
-          to: [process.env.CONTACT_EMAIL || "vsbharaniram5@gmail.com"],
-          subject: `New Contact Form Submission from ${name}`,
+          from: `Platinum Construction <${senderEmail}>`,
+          to: [senderEmail],
+          replyTo: email,
+          subject: `New Contact Form - ${name}`,
           html: `
           <!DOCTYPE html>
           <html>
@@ -66,18 +68,20 @@ export async function POST(request: NextRequest) {
               <style>
                 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
                 .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-                .header { background: linear-gradient(135deg, #004C97 0%, #0066CC 100%); color: white; padding: 20px; border-radius: 8px 8px 0 0; }
+                .header { background: linear-gradient(135deg, #14213d 0%, #000000 100%); color: white; padding: 20px; border-radius: 8px 8px 0 0; }
                 .content { background: #f9f9f9; padding: 20px; border-radius: 0 0 8px 8px; }
                 .field { margin-bottom: 15px; }
-                .label { font-weight: bold; color: #004C97; }
-                .value { margin-top: 5px; padding: 10px; background: white; border-radius: 4px; }
+                .label { font-weight: bold; color: #14213d; }
+                .value { margin-top: 5px; padding: 10px; background: white; border-radius: 4px; border-left: 3px solid #fca311; }
+                .footer { margin-top: 20px; padding: 15px; background: white; border-radius: 4px; text-align: center; font-size: 14px; color: #666; }
+                .logo { color: #fca311; font-weight: bold; }
               </style>
             </head>
             <body>
               <div class="container">
                 <div class="header">
                   <h2 style="margin: 0;">New Contact Form Submission</h2>
-                  <p style="margin: 5px 0 0 0; opacity: 0.9;">Washly Washing Services</p>
+                  <p style="margin: 5px 0 0 0; opacity: 0.9;">Platinum Construction PEI</p>
                 </div>
                 <div class="content">
                   <div class="field">
@@ -86,22 +90,26 @@ export async function POST(request: NextRequest) {
                   </div>
                   <div class="field">
                     <div class="label">Email:</div>
-                    <div class="value">${email}</div>
+                    <div class="value"><a href="mailto:${email}">${email}</a></div>
                   </div>
                   ${phone ? `
                   <div class="field">
                     <div class="label">Phone:</div>
-                    <div class="value">${phone}</div>
+                    <div class="value"><a href="tel:${phone.replace(/\D/g, '')}">${phone}</a></div>
                   </div>
                   ` : ''}
                   <div class="field">
                     <div class="label">Message:</div>
-                    <div class="value">${message}</div>
+                    <div class="value">${message.replace(/\n/g, '<br>')}</div>
                   </div>
                   <div class="field">
                     <div class="label">Submitted:</div>
-                    <div class="value">${new Date().toLocaleString()}</div>
+                    <div class="value">${new Date().toLocaleString('en-CA', { timeZone: 'America/Halifax' })}</div>
                   </div>
+                </div>
+                <div class="footer">
+                  <p style="margin: 0;"><span class="logo">Platinum Construction</span></p>
+                  <p style="margin: 5px 0 0 0;">Charlottetown, PE | (902) 330-1444 | (902) 394-7343</p>
                 </div>
               </div>
             </body>

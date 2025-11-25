@@ -86,12 +86,12 @@ export function Navigation({ onGetQuote }: NavigationProps) {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-12 h-12 group-hover:scale-110 transition-transform">
+              <div className="relative w-12 h-12 group-hover:scale-110 transition-transform rounded-full overflow-hidden">
                 <Image
                   src="/images/logo.jpg"
                   alt="Platinum Construction Logo"
                   fill
-                  className="object-contain rounded-lg"
+                  className="object-cover"
                 />
               </div>
               <div className="hidden sm:block">
