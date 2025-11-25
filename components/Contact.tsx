@@ -81,11 +81,11 @@ export function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 font-chubbo">
             Get In Touch
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Ready to make your property shine? Contact us today for a free
+            Ready to start your construction project? Contact us today for a free
             quote!
           </p>
         </motion.div>
@@ -99,7 +99,7 @@ export function Contact() {
           >
             <Card className="h-full border-2">
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">
+                <CardTitle className="text-2xl text-primary font-chubbo">
                   Send Us a Message
                 </CardTitle>
                 <CardDescription>
@@ -150,7 +150,7 @@ export function Contact() {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Tell us about your cleaning needs..."
+                      placeholder="Tell us about your construction project..."
                       rows={4}
                       required
                     />
@@ -185,11 +185,11 @@ export function Contact() {
           >
             <Card className="border-2 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">
+                <CardTitle className="text-2xl text-primary font-chubbo">
                   Contact Information
                 </CardTitle>
                 <CardDescription>
-                  Reach out to us directly via phone or visit us in PEI
+                  Reach out to us directly via phone in Charlottetown, PEI
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -198,20 +198,20 @@ export function Contact() {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-primary mb-2">
+                    <h3 className="font-semibold text-primary mb-2 font-chubbo">
                       Phone Numbers
                     </h3>
                     <a
-                      href="tel:7058228605"
+                      href="tel:9023301444"
                       className="block text-gray-700 hover:text-primary transition-colors mb-1"
                     >
-                      Pathik Pandya: (705) 822-8605
+                      Seth: (902) 330-1444
                     </a>
                     <a
-                      href="tel:7059704920"
+                      href="tel:9023947343"
                       className="block text-gray-700 hover:text-primary transition-colors"
                     >
-                      Atmiya Patel: (705) 970-4920
+                      Matt: (902) 394-7343
                     </a>
                   </div>
                 </div>
@@ -221,11 +221,11 @@ export function Contact() {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-primary mb-2">
+                    <h3 className="font-semibold text-primary mb-2 font-chubbo">
                       Location
                     </h3>
                     <p className="text-gray-700">
-                      Locally operated in
+                      Charlottetown, PE
                       <br />
                       Prince Edward Island, Canada
                     </p>
@@ -237,14 +237,15 @@ export function Contact() {
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-primary mb-2">
-                      Business Hours
+                    <h3 className="font-semibold text-primary mb-2 font-chubbo">
+                      Email
                     </h3>
-                    <p className="text-gray-700">
-                      Monday - Saturday: 8:00 AM - 6:00 PM
-                      <br />
-                      Sunday: By appointment
-                    </p>
+                    <a
+                      href="mailto:platinumconstructionpei@gmail.com"
+                      className="text-gray-700 hover:text-primary transition-colors break-all"
+                    >
+                      platinumconstructionpei@gmail.com
+                    </a>
                   </div>
                 </div>
               </CardContent>
@@ -252,27 +253,27 @@ export function Contact() {
 
             <Card className="border-2 bg-gradient-to-br from-primary to-blue-900 text-white">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold mb-2">
+                <h3 className="text-2xl font-bold mb-2 font-chubbo">
                   Ready to Get Started?
                 </h3>
                 <p className="text-blue-100 mb-4">
-                  Call us today for a free, no-obligation quote on any of our
-                  services!
+                  Call us today for a free, no-obligation quote on your construction
+                  project!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button
                     asChild
                     variant="secondary"
-                    className="bg-secondary text-primary hover:bg-secondary/90"
+                    className="bg-secondary text-black hover:bg-orange-500 font-bold"
                   >
-                    <a href="tel:7058228605">Call Pathik</a>
+                    <a href="tel:9023301444">Call Seth</a>
                   </Button>
                   <Button
                     asChild
                     variant="secondary"
-                    className="bg-white text-primary hover:bg-white/90"
+                    className="bg-white text-primary hover:bg-white/90 font-semibold"
                   >
-                    <a href="tel:7059704920">Call Atmiya</a>
+                    <a href="tel:9023947343">Call Matt</a>
                   </Button>
                 </div>
               </CardContent>

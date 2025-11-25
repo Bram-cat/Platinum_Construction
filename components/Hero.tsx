@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, HardHat, Building2, CheckCircle } from "lucide-react";
 import Image from "next/image";
@@ -10,52 +9,22 @@ interface HeroProps {
   onGetQuote: () => void;
 }
 
-const backgroundImages = [
-  "/images/1.jpg",
-  "/images/2.jpg",
-  "/images/3.jpg",
-  "/images/4.jpg",
-  "/images/5.jpg",
-  "/images/7.jpg",
-];
-
 export function Hero({ onGetQuote }: HeroProps) {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex(
-        (prevIndex) => (prevIndex + 1) % backgroundImages.length
-      );
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Slideshow */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentImageIndex}
-            initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="absolute inset-0"
-          >
-            <Image
-              src={backgroundImages[currentImageIndex]}
-              alt="Construction project"
-              fill
-              className="object-cover brightness-[0.4] blur-[1px]"
-              priority
-            />
-          </motion.div>
-        </AnimatePresence>
+        <Image
+          src="/images/hero_background.png"
+          alt="Platinum Construction"
+          fill
+          className="object-cover brightness-[0.35]"
+          priority
+        />
       </div>
 
       {/* Overlay Gradient */}
@@ -82,12 +51,12 @@ export function Hero({ onGetQuote }: HeroProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 font-chubbo leading-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 font-chubbo leading-tight"
           >
-            <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+            <span className="text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
               Come Home to
             </span>{" "}
-            <span className="bg-gradient-to-r from-secondary via-orange-300 to-yellow-300 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(252,163,17,0.5)]">
+            <span className="bg-gradient-to-r from-secondary via-orange-300 to-yellow-300 bg-clip-text text-transparent drop-shadow-[0_4px_12px_rgba(252,163,17,0.6)]">
               Quality
             </span>
           </motion.h1>
@@ -96,24 +65,26 @@ export function Hero({ onGetQuote }: HeroProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+            className="text-xl md:text-2xl text-white/95 mb-12 max-w-3xl mx-auto drop-shadow-[0_3px_6px_rgba(0,0,0,0.9)] font-medium"
           >
-            Professional construction and contracting services in Charlottetown and across Prince Edward Island. Quality craftsmanship you can trust.
+            Professional construction and contracting services in Charlottetown
+            and across Prince Edward Island. Quality craftsmanship you can
+            trust.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+            className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16"
           >
             <Button
               size="lg"
               onClick={onGetQuote}
-              className="bg-secondary hover:bg-orange-500 text-black font-bold text-lg px-8 py-6 group shadow-xl"
+              className="bg-secondary hover:bg-orange-500 text-black font-bold text-xl px-12 py-8 group shadow-2xl hover:shadow-secondary/50 transition-all duration-300"
             >
               Get Free Quote
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </Button>
             <Button
               size="lg"
@@ -123,7 +94,7 @@ export function Hero({ onGetQuote }: HeroProps) {
                   .getElementById("services")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="border-2 border-secondary text-white bg-transparent hover:bg-secondary hover:text-black font-semibold text-lg px-8 py-6 shadow-xl"
+              className="border-3 border-white text-white bg-white/10 backdrop-blur-sm hover:bg-white hover:text-primary font-bold text-xl px-12 py-8 shadow-2xl hover:shadow-white/30 transition-all duration-300"
             >
               Our Services
             </Button>
@@ -152,22 +123,6 @@ export function Hero({ onGetQuote }: HeroProps) {
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2"
-        >
-          <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-        </motion.div>
-      </motion.div>
     </section>
   );
 }

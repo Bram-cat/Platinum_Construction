@@ -133,7 +133,7 @@ export function Navigation({ onGetQuote }: NavigationProps) {
                         "font-medium transition-colors",
                         pathname.startsWith("/services")
                           ? "text-black bg-secondary drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]"
-                          : "text-white hover:text-secondary hover:bg-white/10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]"
+                          : "text-black hover:text-secondary hover:bg-white/10 drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]"
                       )}
                     >
                       Services

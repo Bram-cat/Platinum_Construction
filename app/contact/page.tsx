@@ -19,7 +19,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/4.jpg"
-            alt="Contact Washly Washing Services"
+            alt="Contact Platinum Construction"
             fill
             className="object-cover brightness-50"
             priority

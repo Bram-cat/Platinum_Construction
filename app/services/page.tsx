@@ -30,7 +30,7 @@ const services = [
       "Expert craftsmanship",
       "Timely completion"
     ],
-    image: "/images/1.png",
+    image: "/images/1.jpg",
     color: "from-blue-600 to-blue-400"
   },
   {
@@ -52,7 +52,7 @@ const services = [
       "Minimal disruption",
       "Code compliance"
     ],
-    image: "/images/2.png",
+    image: "/images/2.jpg",
     color: "from-slate-700 to-slate-500"
   },
   {
@@ -74,7 +74,7 @@ const services = [
       "Energy efficiency",
       "Personal satisfaction"
     ],
-    image: "/images/3.png",
+    image: "/images/3.jpg",
     color: "from-blue-500 to-cyan-500"
   },
   {
@@ -96,7 +96,7 @@ const services = [
       "Quality assurance",
       "Long-term value"
     ],
-    image: "/images/4.png",
+    image: "/images/4.jpg",
     color: "from-indigo-600 to-blue-600"
   },
   {
@@ -118,7 +118,7 @@ const services = [
       "Quality materials",
       "Beautiful results"
     ],
-    image: "/images/5.png",
+    image: "/images/5.jpg",
     color: "from-purple-600 to-indigo-500"
   }
 ]
@@ -145,10 +145,10 @@ export default function ServicesPage() {
           >
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-6">
               <HardHat className="w-5 h-5 text-secondary" />
-              <span className="text-sm font-medium font-technor">COMPREHENSIVE CONSTRUCTION SERVICES</span>
+              <span className="text-sm font-medium font-chubbo">COMPREHENSIVE CONSTRUCTION SERVICES</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-technor">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-chubbo">
               Our Services
             </h1>
 
@@ -211,7 +211,7 @@ export default function ServicesPage() {
                       <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center`}>
                         <Icon className="w-7 h-7 text-white" />
                       </div>
-                      <h2 className="text-4xl font-bold text-primary font-technor">
+                      <h2 className="text-4xl font-bold text-primary font-chubbo">
                         {service.title}
                       </h2>
                     </div>
@@ -222,7 +222,7 @@ export default function ServicesPage() {
 
                     {/* Features */}
                     <div className="mb-6">
-                      <h3 className="text-xl font-semibold text-primary mb-4 font-technor">What We Offer:</h3>
+                      <h3 className="text-xl font-semibold text-primary mb-4 font-chubbo">What We Offer:</h3>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         {service.features.map((feature, idx) => (
                           <div key={idx} className="flex items-start gap-2">
@@ -235,7 +235,7 @@ export default function ServicesPage() {
 
                     {/* Benefits */}
                     <div className="mb-6">
-                      <h3 className="text-xl font-semibold text-primary mb-4 font-technor">Key Benefits:</h3>
+                      <h3 className="text-xl font-semibold text-primary mb-4 font-chubbo">Key Benefits:</h3>
                       <div className="flex flex-wrap gap-2">
                         {service.benefits.map((benefit, idx) => (
                           <span
@@ -251,7 +251,7 @@ export default function ServicesPage() {
                     <Button
                       onClick={() => setIsQuoteDialogOpen(true)}
                       size="lg"
-                      className="bg-secondary hover:bg-secondary/90 text-white group"
+                      className="bg-secondary hover:bg-orange-500 text-black font-bold group"
                     >
                       Get a Quote for {service.title}
                       <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -274,7 +274,7 @@ export default function ServicesPage() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-technor">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-chubbo">
               Ready to Start Your Project?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
@@ -283,7 +283,7 @@ export default function ServicesPage() {
             <Button
               onClick={() => setIsQuoteDialogOpen(true)}
               size="lg"
-              className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6"
+              className="bg-secondary hover:bg-orange-500 text-black font-bold text-lg px-8 py-6"
             >
               Get Your Free Consultation
               <ArrowRight className="ml-2 w-5 h-5" />
