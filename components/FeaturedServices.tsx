@@ -13,9 +13,9 @@ const services = [
     title: "Residential Construction",
     shortDesc: "Quality homes built with precision and care",
     features: ["Custom Home Building", "Additions & Extensions", "Foundation Work"],
-    color: "#0066CC",
+    color: "#14213d",
     bgGradient: "from-blue-600/10 to-blue-400/10",
-    image: "/images/1.png",
+    image: "/images/1.jpg",
     href: "/services#residential"
   },
   {
@@ -23,9 +23,9 @@ const services = [
     title: "Commercial Projects",
     shortDesc: "Professional commercial construction services",
     features: ["Office Buildings", "Retail Spaces", "Industrial Facilities"],
-    color: "#001a33",
+    color: "#14213d",
     bgGradient: "from-slate-800/10 to-slate-600/10",
-    image: "/images/2.png",
+    image: "/images/2.jpg",
     href: "/services#commercial"
   },
   {
@@ -33,9 +33,9 @@ const services = [
     title: "Renovations",
     shortDesc: "Transform your existing space with expert renovations",
     features: ["Kitchen Remodeling", "Bathroom Upgrades", "Whole Home Renovations"],
-    color: "#0066CC",
+    color: "#14213d",
     bgGradient: "from-blue-500/10 to-cyan-500/10",
-    image: "/images/3.png",
+    image: "/images/3.jpg",
     href: "/services#renovations"
   },
   {
@@ -43,9 +43,9 @@ const services = [
     title: "Custom Builds",
     shortDesc: "Bring your unique vision to life",
     features: ["Design Consultation", "Custom Features", "Quality Materials"],
-    color: "#003366",
+    color: "#14213d",
     bgGradient: "from-blue-700/10 to-indigo-600/10",
-    image: "/images/4.png",
+    image: "/images/4.jpg",
     href: "/services#custom-builds"
   }
 ]
@@ -68,10 +68,10 @@ export function FeaturedServices({ onGetQuote }: FeaturedServicesProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-semibold mb-4 font-technor">
+          <span className="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-semibold mb-4 font-chubbo">
             WHAT WE OFFER
           </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 font-technor">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 font-chubbo">
             Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -115,7 +115,7 @@ export function FeaturedServices({ onGetQuote }: FeaturedServicesProps) {
 
                   {/* Content */}
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors font-technor">
+                    <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors font-chubbo">
                       {service.title}
                     </h3>
                     <p className="text-gray-600 mb-4 leading-relaxed">
@@ -161,13 +161,13 @@ export function FeaturedServices({ onGetQuote }: FeaturedServicesProps) {
         >
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-gradient-to-r from-primary to-primary/80 text-white px-8 py-6 rounded-2xl shadow-xl">
             <div className="text-left">
-              <p className="text-sm font-semibold text-blue-200 mb-1 font-technor">READY TO START?</p>
-              <p className="text-2xl font-bold font-technor">Get a Free Consultation Today!</p>
+              <p className="text-sm font-semibold text-orange-200 mb-1 font-chubbo">READY TO START?</p>
+              <p className="text-2xl font-bold font-chubbo">Get a Free Consultation Today!</p>
             </div>
             <Button
               onClick={onGetQuote}
               size="lg"
-              className="bg-secondary hover:bg-secondary/90 text-white font-bold shadow-lg"
+              className="bg-secondary hover:bg-orange-500 text-black font-bold shadow-lg"
             >
               Contact Us Now
             </Button>

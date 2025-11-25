@@ -77,9 +77,9 @@ export function QuoteDialog({ open, onOpenChange }: QuoteDialogProps) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-2xl text-primary">Request a Free Quote</DialogTitle>
+          <DialogTitle className="text-2xl text-primary font-chubbo">Request a Free Quote</DialogTitle>
           <DialogDescription>
-            Fill out the form below and we&apos;ll get back to you with a customized quote for your cleaning needs
+            Fill out the form below and we&apos;ll get back to you with a customized quote for your construction project
           </DialogDescription>
         </DialogHeader>
 
@@ -134,11 +134,12 @@ export function QuoteDialog({ open, onOpenChange }: QuoteDialogProps) {
               required
             >
               <option value="">Select a service</option>
-              <option value="window-cleaning">Window Cleaning</option>
-              <option value="gutter-cleaning">Gutter Cleaning</option>
-              <option value="pressure-washing">Soft & Pressure Washing</option>
-              <option value="roof-cleaning">Roof Cleaning</option>
-              <option value="multiple">Multiple Services</option>
+              <option value="residential-construction">Residential Construction</option>
+              <option value="commercial-construction">Commercial Construction</option>
+              <option value="renovations">Renovations</option>
+              <option value="custom-builds">Custom Builds</option>
+              <option value="finishing-design">Finishing & Design</option>
+              <option value="other">Other / Multiple Services</option>
             </select>
           </div>
 
@@ -165,19 +166,19 @@ export function QuoteDialog({ open, onOpenChange }: QuoteDialogProps) {
             />
           </div>
 
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+          <div className="bg-secondary/10 border border-secondary/30 rounded-lg p-4">
             <div className="flex items-start gap-3">
-              <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+              <Phone className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
               <div className="text-sm">
                 <p className="font-semibold text-primary mb-1">Prefer to speak directly?</p>
                 <p className="text-gray-700">
-                  Call us at{" "}
-                  <a href="tel:7058228605" className="text-primary hover:underline font-medium">
-                    (705) 822-8605
+                  Call Seth at{" "}
+                  <a href="tel:9023301444" className="text-primary hover:underline font-medium">
+                    (902) 330-1444
                   </a>{" "}
-                  or{" "}
-                  <a href="tel:7059704920" className="text-primary hover:underline font-medium">
-                    (705) 970-4920
+                  or Matt at{" "}
+                  <a href="tel:9023947343" className="text-primary hover:underline font-medium">
+                    (902) 394-7343
                   </a>
                 </p>
               </div>
@@ -192,7 +193,7 @@ export function QuoteDialog({ open, onOpenChange }: QuoteDialogProps) {
 
           <Button
             type="submit"
-            className="w-full bg-primary hover:bg-primary/90"
+            className="w-full bg-secondary hover:bg-orange-500 text-black font-bold"
             disabled={isSubmitted || isSubmitting}
           >
             {isSubmitting ? "Submitting..." : isSubmitted ? "Quote Request Sent!" : "Submit Quote Request"}

@@ -2,32 +2,32 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Droplets, Home, Wind, Waves } from "lucide-react"
+import { Home, Building, Wrench, Hammer } from "lucide-react"
 
 const services = [
   {
-    icon: Droplets,
-    title: "Window Cleaning",
-    description: "Crystal-clear windows that let the sunshine in. We clean both residential and commercial windows with streak-free perfection.",
-    color: "text-blue-500"
-  },
-  {
-    icon: Wind,
-    title: "Gutter Cleaning",
-    description: "Keep your gutters flowing freely. We remove debris and ensure proper drainage to protect your home from water damage.",
-    color: "text-green-500"
-  },
-  {
-    icon: Waves,
-    title: "Soft & Pressure Washing",
-    description: "Revitalize your house, driveway, walkway, and more. Our specialized washing techniques restore surfaces to their original beauty.",
-    color: "text-cyan-500"
-  },
-  {
     icon: Home,
-    title: "Roof Cleaning",
-    description: "Extend the life of your roof with professional cleaning. We safely remove moss, algae, and stains to keep your roof looking great.",
-    color: "text-purple-500"
+    title: "Residential Construction",
+    description: "Quality homes built with precision and care. From custom home building to additions and extensions, we bring your dream home to life.",
+    color: "text-primary"
+  },
+  {
+    icon: Building,
+    title: "Commercial Projects",
+    description: "Professional commercial construction services. We specialize in office buildings, retail spaces, and industrial facilities across PEI.",
+    color: "text-primary"
+  },
+  {
+    icon: Wrench,
+    title: "Renovations",
+    description: "Transform your existing space with expert renovations. Kitchen remodeling, bathroom upgrades, and whole home renovations done right.",
+    color: "text-primary"
+  },
+  {
+    icon: Hammer,
+    title: "Custom Builds",
+    description: "Bring your unique vision to life with our custom build services. From design consultation to quality materials and custom features.",
+    color: "text-primary"
   }
 ]
 
@@ -57,11 +57,11 @@ export function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 font-chubbo">
             Our Services
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Professional cleaning solutions tailored to keep your property pristine all year round
+            Professional construction solutions tailored to bring your vision to life
           </p>
         </motion.div>
 
@@ -81,7 +81,7 @@ export function Services() {
                     <div className={`w-16 h-16 rounded-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center mb-4`}>
                       <Icon className={`w-8 h-8 ${service.color}`} />
                     </div>
-                    <CardTitle className="text-xl text-primary">{service.title}</CardTitle>
+                    <CardTitle className="text-xl text-primary font-chubbo">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CardDescription className="text-gray-600 leading-relaxed">

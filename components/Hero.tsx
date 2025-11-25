@@ -59,7 +59,7 @@ export function Hero({ onGetQuote }: HeroProps) {
       </div>
 
       {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/60 to-secondary/40 z-[1]"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-primary/70 z-[1]"></div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">
@@ -110,7 +110,7 @@ export function Hero({ onGetQuote }: HeroProps) {
             <Button
               size="lg"
               onClick={onGetQuote}
-              className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-6 group"
+              className="bg-secondary hover:bg-orange-500 text-black font-bold text-lg px-8 py-6 group shadow-xl"
             >
               Get Free Quote
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -123,7 +123,7 @@ export function Hero({ onGetQuote }: HeroProps) {
                   .getElementById("services")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="border-2 border-white text-white hover:bg-secondary hover:text-black hover:border-secondary text-lg px-8 py-6"
+              className="border-2 border-secondary text-white bg-transparent hover:bg-secondary hover:text-black font-semibold text-lg px-8 py-6 shadow-xl"
             >
               Our Services
             </Button>
